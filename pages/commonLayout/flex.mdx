@@ -1,0 +1,25 @@
+# Flex
+
+## Usage
+
+CSS Flexbox를 사용하여 자식 컴포넌트들을 유연하게 배열하는 컴포넌트
+
+```tsx filename="flex.tsx" {1} copy
+<Flex direction="row" justify="center" align="center" gap={5}>
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</Flex>
+```
+
+## Component
+
+import { Flex } from "../../components/Flex.tsx";
+
+<div style={{ background: "red" }}>
+  <Flex direction="row" justify="space-around" align="center" gap={5}>
+    <div style={{ background: "blue" }}>Item 1</div>
+    <div style={{ background: "green" }}>Item 2</div>
+    <div style={{ background: "yellow" }}>Item 3</div>
+  </Flex>
+</div>

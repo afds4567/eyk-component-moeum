@@ -1,0 +1,33 @@
+# Masonry Layout
+
+## Usage
+
+여러 크기의 아이템을 격자 형태로 정렬하되, 각 행과 열의 높이가 동일하지 않아 빈 공간이 최소화되는 레이아웃 컴포넌트.
+
+```tsx filename="masonry.tsx" {1} copy
+<Masonry columns={4}>
+  <div style={{ background: "red", height: "200px" }}>1</div>
+  <div style={{ background: "yellow", height: "280px" }}>2</div>
+  <div style={{ background: "blue", height: "100px" }}>3</div>
+  <div style={{ background: "green", height: "340px" }}>4</div>
+  <div style={{ background: "red", height: "200px" }}>5</div>
+  <div style={{ background: "yellow", height: "260px" }}>6</div>
+  <div style={{ background: "blue", height: "120px" }}>7</div>
+  <div style={{ background: "green", height: "40px" }}>8</div>
+</Masonry>
+```
+
+## Component
+
+import { Masonry } from "../../components/Masonry.tsx";
+
+<Masonry columns={4}>
+  <div style={{ background: "red", height: "200px" }}>1</div>
+  <div style={{ background: "yellow", height: "280px" }}>2</div>
+  <div style={{ background: "blue", height: "100px" }}>3</div>
+  <div style={{ background: "green", height: "340px" }}>4</div>
+  <div style={{ background: "red", height: "200px" }}>5</div>
+  <div style={{ background: "yellow", height: "260px" }}>6</div>
+  <div style={{ background: "blue", height: "120px" }}>7</div>
+  <div style={{ background: "green", height: "40px" }}>8</div>
+</Masonry>

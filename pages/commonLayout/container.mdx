@@ -1,0 +1,21 @@
+# Container
+
+## Usage
+
+화면의 폭에 따라 내용의 최대 폭을 제한하고 중앙에 배치하는 레이아웃
+
+```tsx filename="container.tsx" {1} copy
+<Container backgroundColor="red" width={100} minWidth={200} maxWidth={960}>
+  <div>Content</div>
+</Container>
+```
+
+## Component
+
+import { Container } from "../../components/Container.tsx";
+
+<div style={{ width: "100%", background: "white" }}>
+  <Container backgroundColor="red" width={100} minWidth={200} maxWidth={960}>
+    <div>Content</div>
+  </Container>
+</div>
